@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSearchUsersQuery, useLazyGetUserReposQuery } from "../store/github/github.api";
 import { useDebounce } from "../hooks/debounce";
-import { UserItem, ReposItem } from "../utils/models";
 import RepoCard from "../components/RepoCard";
 
 const Home = () => {
