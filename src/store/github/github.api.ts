@@ -3,6 +3,7 @@ import { ServerResponse, UserItem } from '../../utils/models'
 
 export const githubApi = createApi({
   reducerPath: 'github/api',
+  refetchOnFocus: true,
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://api.github.com/'
   }),
